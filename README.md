@@ -1,5 +1,7 @@
 # Gruppetto
 
+**Live preview (demo data):** https://nikolaskorakidis.github.io/gruppetto/
+
 A cycling-club ride planner for iOS, Android and the web, built from one codebase.
 
 Clubs plan rides. Members sign up as **going / maybe / can't**, pick a pace group, chat about the ride, download the GPX, and check the forecast. Admins manage members, roles, invites and news.
@@ -161,6 +163,9 @@ npx eas-cli@latest build --profile development --platform ios
 1. Sign up. Enter the code from the email, or tap its link.
 2. Set your name and photo, then **Create a club**.
 3. Open **Club → Manage club & invite riders** and share the QR code, link or code with your riding mates.
+
+### Preview link (GitHub Pages)
+Every push to `main` builds the web app in demo mode and publishes it to GitHub Pages (`.github/workflows/deploy-preview.yml`). The workflow also runs the typecheck and tests first.
 
 ### Deploying the web app
 ```bash
