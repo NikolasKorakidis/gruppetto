@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <body style="margin:0;padding:0;background:#F4F2EC;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;color:#15181B;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#F4F2EC;padding:32px 16px;">
+      <tr>
+        <td align="center">
+          <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:480px;background:#FFFFFF;border-radius:20px;overflow:hidden;">
+            <tr>
+              <td style="background:#0E7C66;padding:24px 28px;">
+                <div style="font-size:20px;font-weight:800;color:#FFFFFF;letter-spacing:-0.3px;">gruppetto</div>
+                <div style="font-size:13px;color:#CDEBE3;margin-top:2px;">Group rides, sorted.</div>
+              </td>
+            </tr>
+            <tr>
+              <td style="padding:28px;">
+                <h1 style="font-size:22px;margin:0 0 12px;">Confirm your email</h1>
+                <p style="font-size:15px;line-height:22px;margin:0 0 24px;color:#4A5057;">Welcome aboard! Confirm your email address to finish creating your account.</p>
+                <a href="{{ .ConfirmationURL }}" style="display:inline-block;background:#15181B;color:#FFFFFF;text-decoration:none;font-weight:700;font-size:15px;padding:14px 22px;border-radius:999px;">Confirm email</a>
+                <p style="font-size:14px;line-height:20px;margin:28px 0 8px;color:#4A5057;">Or enter this code in the app:</p>
+                <div style="font-family:'SF Mono',Menlo,Consolas,monospace;font-size:30px;font-weight:700;letter-spacing:8px;background:#F4F2EC;border-radius:12px;padding:14px 18px;text-align:center;">{{ .Token }}</div>
+                <p style="font-size:12px;line-height:18px;margin:24px 0 0;color:#8A9097;">The code expires in 1 hour. If you didn't sign up, you can safely ignore this email.</p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
